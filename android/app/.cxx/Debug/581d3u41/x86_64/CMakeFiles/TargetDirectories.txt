@@ -1,0 +1,2 @@
+G:/collage/4th year/Graduation/Train month/Note app/note_app/android/app/.cxx/Debug/581d3u41/x86_64/CMakeFiles/edit_cache.dir
+G:/collage/4th year/Graduation/Train month/Note app/note_app/android/app/.cxx/Debug/581d3u41/x86_64/CMakeFiles/rebuild_cache.dir

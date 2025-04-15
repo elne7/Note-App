@@ -1,6 +1,6 @@
 part of 'note_cubit.dart';
 
-sealed class NoteState {}
+abstract class NoteState {}
 
 final class NoteInitial extends NoteState {}
 
