@@ -4,6 +4,7 @@ import 'package:note_app/cubits/note_cubit/note_cubit.dart';
 import 'package:note_app/models/note_model.dart';
 import 'package:note_app/widgets/custom_app_bar.dart';
 import 'package:note_app/widgets/custom_text_field.dart';
+import 'package:note_app/widgets/edit_note_color_list.dart';
 
 class EditNoteViewBody extends StatefulWidget {
   const EditNoteViewBody({super.key, required this.note});
@@ -25,7 +26,7 @@ class _EditNoteViewBodyState extends State<EditNoteViewBody> {
           children: [
             const SizedBox(height: 40),
             CustomAppBar(
-              onPressed: (){
+              onPressed: () {
                 widget.note.title = title ?? widget.note.title;
                 widget.note.subTitle = content ?? widget.note.subTitle;
                 widget.note.save();
@@ -50,6 +51,10 @@ class _EditNoteViewBodyState extends State<EditNoteViewBody> {
               hint: widget.note.subTitle,
               maxLine: 5,
             ),
+            const SizedBox(height: 16),
+            EditNoteColorList(
+              note: widget.note,
+            )
           ],
         ),
       ),
