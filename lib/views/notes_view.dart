@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:note_app/cubits/note_cubit/note_cubit.dart';
 import 'package:note_app/widgets/notes_view_body.dart';
 
 class NotesView extends StatelessWidget {
@@ -6,6 +8,9 @@ class NotesView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const NotesViewBody();
+    return BlocProvider(
+      create: (context) => NoteCubit(),
+      child: const NotesViewBody(),
+    );
   }
 }
